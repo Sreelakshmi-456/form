@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="mainp.css" />
+</head>
+<body>
+	<div class="container mt-5">
+  
+    <form onsubmit="submitForm(event)" style="width: 500px; margin: auto; padding: 70px; border: 1px solid black;">
+        
+		<table width="100%">
+		<tbody>
+		<center>
+		<h2 style="color:darkblue;">User Registration Form</h2> 
+		<hr width="80%">
+		</center>
+            <tr>
+                 <td><label for="fullName" class="form-label"><b>Full Name:</b></label></td>
+            <td>
+				<input type="text" class="form-control" id="fullName" required />
+				<div class="invalid-feedback">Name must be at least 5 characters.</div>
+            </td>
+            </tr>
+			
+			<tr>
+				<td><label for="email" class="form-label"><b>Email ID:</b></label></td>
+			<td>
+				  <input type="email" class="form-control" id="email" required />
+				  <div class="invalid-feedback">Enter a valid email.</div>
+			</td>
+          </tr>
+		  
+            <tr>
+                <td>
+				<label for="age" class="form-label"><b>Age:</b></label></td>
+                <td>
+				<input type="number" class="form-control" id="age" required />
+			</td>
+            </tr>
+
+			 <tr>
+                <td>
+				<label for="date of birth" class="form-label"><b>Date of Birth:</b></label></td>
+                <td> 
+				<input type="date" class="form-control" id="date of birth" required />
+			</td>
+            </tr>
+			
+			<tr>
+				<td><label for="country" class="form-label"><b>Country:</b></label></td>
+			<td>
+				  <input type="country" class="form-control" id="country" required />
+				  
+			</td>
+          </tr>
+		  
+            <tr>
+                <td><b>Gender:</b></td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Other"> Other
+                </td>
+            </tr>
+
+			  <tr>
+				<td>
+					<label for="contact" class="form-label"><b>Contact Number:</b></label></td>
+				<td>
+					  <input type="text" class="form-control" id="phone" required />
+					  <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+			</td>
+			  </tr>
+			  
+			 <tr>
+                <td><label for="address" class="form-label"><b>Address:</b></label></td>
+            <td>
+				<textarea name="address" class="form-control" rows="3" required></textarea>
+			</td>
+          </tr>
+
+			<tr>
+             <td>
+				 <label for="password" class="form-label"><b>Password:</b></label></td>
+            <td>
+				  <input type="password" class="form-control" id="password" required />
+				  <div class="invalid-feedback">Password must be strong (at least 8 characters, not 'password' or your name).</div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+				<label for="confirmPassword" class="form-label"><b>Confirm Password:</b></label></td>
+            <td>
+				<input type="password" class="form-control" id="confirmPassword" required />
+				<div class="invalid-feedback">Passwords do not match.</div>
+            </td>
+          </tr>
+
+			  
+          
+            <tr>
+                <td colspan="2" align="center">
+                    <br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+  <script src="mainpr.js"></script>
+
+</body>
+</html>
+
+

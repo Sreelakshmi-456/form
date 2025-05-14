@@ -1,0 +1,40 @@
+body {
+  background-color:#F5F5F5;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #343a40;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px; /* this replaces cellspacing */
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008000;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #0d6efd;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  opacity: 0.9;
+}
