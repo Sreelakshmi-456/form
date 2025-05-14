@@ -12,7 +12,10 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
-
+invalid-feedback {
+  display:none;
+  color:red;
+}
 table {
   border-collapse: separate;
   border-spacing: 10px; /* this replaces cellspacing */
