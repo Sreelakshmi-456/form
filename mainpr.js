@@ -1,15 +1,20 @@
-function submitForm(event) {
-  event.preventDefault(); // prevent default form submission
 
-  let isValid = true;
+  function submitForm(event) {
+  event.preventDefault();
 
-  const fullName = document.getElementById("fullName");
-  const email = document.getElementById("email");
-  const age = document.getElementById("age");
-  const genderInputs = document.getElementsByName("gender");
-  const phone = document.getElementById("phone");
-  const password = document.getElementById("password");
-  const confirmPassword = document.getElementById("confirmPassword");
+  const name = document.getElementById('fullName');
+  const nameError = name.nextElementSibling;
+
+  if (name.value.length < 5) {
+    name.classList.add('is-invalid');
+    nameError.style.display = 'block';
+  } else {
+    name.classList.remove('is-invalid');
+    nameError.style.display = 'none';
+  }
+
+  // Repeat similar logic for other fields...
+}
 
   // Reset invalid classes
   [fullName, email, age, phone, password, confirmPassword].forEach(input =>
